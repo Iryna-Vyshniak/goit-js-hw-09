@@ -91,6 +91,32 @@ button:active {
   top: 3px;
 }
 
+button[type='submit'] {
+  width: 88px;
+  height: 44px;
+  border-radius: 34px;
+  background-color: #f7eff4;
+  filter: drop-shadow(3.4px 3.4px 3.4px rgb(183, 177, 181))
+    drop-shadow(-3.4px -3.4px 3.4px white);
+  -webkit-filter: drop-shadow(3.4px 3.4px 3.4px rgb(183, 177, 181))
+    drop-shadow(-3.4px -3.4px 3.4px white);
+  box-shadow: inset 4.3px 4.3px 7px #fff;
+
+  color: #ff0505;
+  text-shadow: 1px 1.6px 1px #fff;
+}
+
+button[type='submit']:hover {
+  filter: drop-shadow(5px 5px 3.4px rgb(183, 177, 181));
+  -webkit-filter: drop-shadow(5px 5px 3.4px rgb(183, 177, 181));
+  box-shadow: inset 2.5px 2.5px 2.5px #fff;
+}
+button[type='submit']:active {
+  filter: drop-shadow(0px 0px 0px rgb(183, 177, 181));
+  -webkit-filter: drop-shadow(0px 0px 0px rgb(183, 177, 181));
+  box-shadow: inset 4.3px 4.3px 7px rgb(183, 177, 181);
+}
+
 .timer {
   display: flex;
   margin-top: 10px;
@@ -142,5 +168,54 @@ span.flatpickr-day.selected:hover {
 .flatpickr-time input.flatpickr-minute,
 .flatpickr-time input.flatpickr-second {
   font-weight: 400;
-  color: red;
+  color: #ff0505;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+label {
+  margin-right: 20px;
+}
+
+label span {
+  /* color: #b86dfe; */
+  color: #f7eff4;
+  text-transform: uppercase;
+  /* text-shadow: 0 1em 1em rgb(255, 255, 255), 0 0 1em rgba(55, 0, 255, 0.587); */
+  /* text-shadow: 1.1px 1px 0px #5f1b7d, -1.1px -1px 0px rgb(255, 255, 255); */
+  text-shadow: 1.1px 1px 0px #c2a8cd, -1.1px -1px 0px #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type='number'] {
+  margin-left: 10px;
+  padding: 10px;
+  width: 220px;
+  height: 40px;
+
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+
+  background-color: transparent;
+  color: #ff0505;
+  box-shadow: 1px 1px 0px #c2a8cd, -1px -1px 0px #ffffff;
+  /* box-shadow: inset 3px 3px 3px #fff, inset -3px -3px 3px #e7d1f2; */
+  filter: drop-shadow(0px 1px 1px rgb(247, 216, 236));
+  -webkit-filter: drop-shadow(0px 1px 1px rgb(247, 216, 236));
+
+  font-size: 16px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+input[type='number']::placeholder {
+  color: #e2c8f5;
+}
+
+input[type='number']:focus {
+  box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #e7d1f2;
 }

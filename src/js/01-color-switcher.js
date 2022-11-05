@@ -4,7 +4,7 @@ let idInt = null;
 const refs = {
     btnStart: document.querySelector('button[data-start]'),
     btnStop: document.querySelector('button[data-stop]'),
-    body: document.body,
+    body: document.querySelector('body'),
 }
 
 // refs.btnStop.setAttribute('disabled', true);

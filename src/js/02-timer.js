@@ -5,7 +5,7 @@ import { Report } from 'notiflix/build/notiflix-report-aio';
 const refs = {
     body: document.querySelector('body'),
     dateInput: document.querySelector('input#datetime-picker'),
-    btnStart: document.querySelector('button[data-start-timer]'),
+    btnStartTimer: document.querySelector('button[data-start-timer]'),
     daysRemaining: document.querySelector('[data-days]'),
     hoursRemaining: document.querySelector('[data-hours]'),
     minutesRemaining: document.querySelector('[data-minutes]'),
@@ -13,8 +13,8 @@ const refs = {
 }
 
 refs.body.style.backgroundColor = '#ece5da';
-refs.btnStart.disabled = true;
-refs.btnStart.addEventListener('click', timerStart);
+refs.btnStartTimer.disabled = true;
+refs.btnStartTimer.addEventListener('click', timerStart);
 
 const TIMER_DELAY = 1000;
 let timerId = null;
@@ -28,7 +28,7 @@ const options = {
     defaultDate: new Date(),
     minuteIncrement: 1,
     onClose(selectedDates) {
-        console.log(selectedDates[0]);
+        // console.log(selectedDates[0]);
         onDateCheck(selectedDates);
     }
 }
@@ -47,7 +47,7 @@ function onDateCheck(selectedDates) {
     currentDate = new Date().getTime();
 
     if (selectedDate > currentDate) {
-        refs.btnStart.disabled = false;
+        refs.btnStartTimer.disabled = false;
         Report.success(
             'Congratulation! Click on start!',
             '"Do not try to become a person of success but try to become a person of value." <br/><br/>- Albert Einstein',
@@ -56,7 +56,7 @@ function onDateCheck(selectedDates) {
         return;
     }
     Report.failure(
-        'Ooops',
+        'Ooops...',
         'Please, choose a date in the future and remember: "Knowledge rests not upon truth alone, but upon error also." - Carl Gustav Jung',
         'Okay',
     );
@@ -67,11 +67,18 @@ function timerStart() {
         currentDate = new Date().getTime();
         if (selectedDate - currentDate < 1000) {
             clearInterval(timerId);
-            refs.btnStart.disabled = true;
+            refs.btnStartTimer.disabled = true;
             refs.dateInput.disabled = false;
+            Report.info(
+                'Congratulation! Timer stoped!',
+                'Please, if you want to start timer, choose a date and click on start or reload this page',
+                'Okay',
+            );
+
+
             return;
         } else {
-            refs.btnStart.disabled = true;
+            refs.btnStartTimer.disabled = true;
             refs.dateInput.disabled = true;
             currentDate += 1000;
             remainingTime = Math.floor(selectedDate - currentDate);

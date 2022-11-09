@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise generator</title>
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Promise generator</title>
-  <link rel="stylesheet" href="css/common.css" />
-</head>
+  <body>
+    <p><a a class="main-link" href="index.html">Go back</a></p>
 
-<body>
-  <p><a href="index.html">Go back</a></p>
+    <form class="form">
+      <label>
+        <span>First delay (ms)</span>
+        <input type="number" name="delay" required />
+      </label>
+      <label>
+        <span>Delay step (ms)</span>
+        <input type="number" name="step" required />
+      </label>
+      <label>
+        <span>Amount</span>
+        <input type="number" name="amount" required />
+      </label>
+      <button type="submit">Create promises</button>
+    </form>
 
-  <form class="form">
-    <label>
-      <span>First delay (ms)</span>
-      <input type="number" name="delay" required />
-    </label>
-    <label>
-      <span>Delay step (ms)</span>
-      <input type="number" name="step" required />
-    </label>
-    <label>
-      <span>Amount</span>
-      <input type="number" name="amount" required />
-    </label>
-    <button type="submit">Create promises</button>
-  </form>
-
-  <script src="js/03-promises.js" type="module"></script>
-</body>
-
+    <script src="js/03-promises.js" type="module"></script>
+  </body>
 </html>

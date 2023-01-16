@@ -182,11 +182,8 @@ label {
 }
 
 label span {
-  /* color: #b86dfe; */
   color: #f7eff4;
   text-transform: uppercase;
-  /* text-shadow: 0 1em 1em rgb(255, 255, 255), 0 0 1em rgba(55, 0, 255, 0.587); */
-  /* text-shadow: 1.1px 1px 0px #5f1b7d, -1.1px -1px 0px rgb(255, 255, 255); */
   text-shadow: 1.1px 1px 0px #c2a8cd, -1.1px -1px 0px #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -205,7 +202,6 @@ input[type='number'] {
   background-color: transparent;
   color: #ff0505;
   box-shadow: 1px 1px 0px #c2a8cd, -1px -1px 0px #ffffff;
-  /* box-shadow: inset 3px 3px 3px #fff, inset -3px -3px 3px #e7d1f2; */
   filter: drop-shadow(0px 1px 1px rgb(247, 216, 236));
   -webkit-filter: drop-shadow(0px 1px 1px rgb(247, 216, 236));
 

@@ -1,27 +1,6 @@
 **Read in other languages: [Русский](README.md), [Українська](README.ua.md),
 [English](README.en.md), [Español](README.es.md), [Polski](README.pl.md).**
 
-# Критерії приймання
-
-- Створено репозиторій `goit-js-hw-09`.
-- Домашня робота містить два посилання для кожного проекту: на вихідні файли і
-  робочу сторінку на `GitHub Pages`.
-- В консолі відсутні помилки і попередження під час відкриття живої сторінки
-  завдання.
-- Проект зібраний за допомогою
-  [parcel-project-template](https://github.com/goitacademy/parcel-project-template).
-- Код відформатований за допомогою `Prettier`.
-
-## Стартові файли
-
-У [папці src](./src) знайдеш стартові файли з готовою розміткою, стилями і
-підключеними файлами скриптів для кожного завдання. Скопіюй їх собі у проект,
-повністю замінивши папку `src` в
-[parcel-project-template](https://github.com/goitacademy/parcel-project-template).
-Для цього завантаж увесь цей репозиторій як архів або використовуй
-[сервіс DownGit](https://downgit.github.io/) для завантаження окремої папки з
-репозиторія.
-
 [![Image from Gyazo](https://i.gyazo.com/a27dcd299b18108eaadc75349308586f.png)](https://gyazo.com/a27dcd299b18108eaadc75349308586f)
 
 ## Завдання 1 - перемикач кольорів

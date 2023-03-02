@@ -173,8 +173,10 @@ span.flatpickr-day.selected:hover {
 
 .form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
+  margin: 50px;
 }
 
 label {

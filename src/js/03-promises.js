@@ -95,5 +95,6 @@ function onPromiseCreate(e) {
           options
         );
       });
+    e.currentTarget.reset();
   }
 }
